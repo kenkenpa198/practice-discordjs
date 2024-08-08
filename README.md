@@ -1,14 +1,29 @@
 # Practice - Discord.js
 
-## How to Run
+## Commands
+
+### Setup
 
 ```shell
-$ git clone https://...
-$ npm ci
-$ cp config.json.sample config.json
+git clone https://...
+npm ci
+cp config.json.sample config.json
 
 # Input your bot's token to config.json
-
-$ node .
-Ready! Logged in as your-bot#1234
 ```
+
+### Run
+
+```shell
+node .
+```
+
+### Registering slash commands
+
+```shell
+node deploy-commands.js
+```
+
+## Reference
+
+- [Introduction | discord.js Guide](https://discordjs.guide/)
