@@ -5,7 +5,7 @@
 ### Setup
 
 ```shell
-git clone https://...
+git clone git@github.com:kenkenpa198/practice-discordjs.git
 npm ci
 cp config.json.sample config.json
 
