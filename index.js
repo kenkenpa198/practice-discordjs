@@ -10,7 +10,6 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 // Dynamically retrieve your command files
 client.commands = new Collection();
-
 const foldersPath = path.join(__dirname, 'commands');
 const commandFolders = fs.readdirSync(foldersPath);
 
@@ -32,6 +31,9 @@ for (const folder of commandFolders) {
     }
   }
 }
+
+// Initialize a Collection to store cooldowns of commands
+client.cooldowns = new Collection();
 
 // Reading event files
 const eventsPath = path.join(__dirname, 'events');
